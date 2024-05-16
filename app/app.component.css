@@ -1,0 +1,49 @@
+.background {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+  
+  .background::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: url("../assets/Logo.png") black;
+    transform: rotate(-40deg);
+    opacity: 0.3;
+    background-repeat: space;
+    background-size: 500px;
+  }
+  li{
+    padding: 20px;
+  }
+  a{
+    color: white;
+  }
+  .btn-new{
+    color: white;
+    background-color: #d64218;
+    border-radius: 10px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .search {
+    border-radius: 10px;
+    background-color: #c0b4b4;
+    padding: 10px;
+
+    .searchTxt{
+      background: inherit;
+      border: none;
+      width:  300px;
+    }
+  }
