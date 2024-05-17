@@ -1,6 +1,6 @@
 .background {
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     height: 100vh;
     background-color: black;
     color: white;
@@ -11,14 +11,15 @@
     position: absolute;
     width: 200%;
     height: 200%;
-    top: -50%;
-    left: -50%;
+    top: 35%;
+    left: -60%;
     background: url("../assets/Logo.png") black;
     transform: rotate(-40deg);
     opacity: 0.3;
     background-repeat: space;
-    background-size: 500px;
+    background-position: left 50%;
   }
+
   li{
     padding: 20px;
   }
@@ -27,23 +28,185 @@
   }
   .btn-new{
     color: white;
-    background-color: #d64218;
     border-radius: 10px;
+    background-image: linear-gradient(to right, #532418, #ab3f23);
+    width: 120px;
   }
   .container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+    z-index: 2;
+    width: 70%;
+    margin-top: 80px;
+    letter-spacing: 1px;
+  }  
   .search {
     border-radius: 10px;
-    background-color: #c0b4b4;
+    background-color: #86675f;
     padding: 10px;
-
+    box-shadow: 5px 4px 5px 3px rgb(142 125 124);
+    .searchIcon{
+      border-radius: 7px;
+      padding: 7px;
+      background-color: #a39292;
+      margin: 5px;
+    }
     .searchTxt{
       background: inherit;
       border: none;
-      width:  300px;
+      width:  200px;
+      outline: none;
+    }
+    ::placeholder {
+      color: black;
+      opacity: 1; /* Firefox */
     }
   }
+  .iconList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+    background-color: black;
+    img{
+      width: 50px;
+      padding: 5px;
+    }
+  }
+  .aboutInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    background-color: black;
+    opacity: 0.8;
+  }
+  .count{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    span{
+      font-size: 38px; 
+      font-weight: 700;
+      padding: 20px;
+    }
+  }
+  .borderDiv{
+    border-right: 1px solid #d64218;
+  }
+  .thumb1{
+    border:solid 1px #d64218;
+    border-radius: 20px;
+    .thumb2{
+      background-color: #d64218;
+      height: 200px;
+      margin-top: 20px;
+      margin-left: 20px;
+      border-radius: 15px 15px 0px;
+      padding: 10px;
+      margin: 20px;
+  }
+}
+.checked{
+  color: orange;
+}
+.thumb3{
+  padding: 0px;
+  margin-top:15%;
+}
+.services{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  div{
+    padding: 15px;
+    width: 200px;
+  }
+  img{
+    height: 100px;
+    padding: 20px;
+  }
+  p{
+    color: #cd4420;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+.exploreBtn{
+  border: 1px solid #cd4420;
+  border-radius: 30px;
+  color: #cd4420;
+  font-size: 14px;
+  padding: 15px;
+  width: 170px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+.portfolio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  background-color: black;
+  opacity: 0.8;
+  .info {
+    text-align: center;
+    padding: 20px;
+
+    .infoHead {
+      color: #d64218;
+      font-size: 26px;
+      font-weight: 700;
+    }
+  }
+  .infoImg{
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+  }
+}
+.exploreBtn1{
+  border: 1px solid #cd4420;
+  border-radius: 30px;
+  color: #cd4420;
+  font-size: 14px;
+  padding: 15px;
+  width: 110px;
+  margin: 30px;
+}
+
+.moreBtn{
+  border-radius: 5px;
+  background-color: #e95731;
+  color: black;
+  font-size: 14px;
+}
+.features{
+  margin-top: 40px;
+  text-align: center;
+
+  .feature_info{
+    display: block; 
+    position: relative;
+    padding: 25px;
+    img{
+      height: 100px;
+    }
+  }
+}
+.articles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  background-color: black;
+  opacity: 0.8;
+}
