@@ -4,6 +4,7 @@
     height: 100vh;
     background-color: black;
     color: white;
+    background-repeat: space;
   }
   
   .background::before {
@@ -62,7 +63,7 @@
     }
     ::placeholder {
       color: black;
-      opacity: 1; /* Firefox */
+      opacity: 1; 
     }
   }
   .iconList{
@@ -238,4 +239,200 @@
   border-radius: 40px;
   color: black;
   padding: 22px;
+}
+.reviews{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  width: 100%;
+  margin-top: 80px;
+  letter-spacing: 1px;
+
+  .items{
+    width: 70%;
+    text-align: center;
+    position: relative;
+    left: 15%;
+    margin-bottom: 5%;
+  }
+}
+blockquote {
+  border:none;
+  font-family:Georgia;
+  margin-bottom:-30px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.big-quote {
+  font-size: 5em;
+}
+
+
+.quote1 { 
+content: open-quote;
+font-weight: bold;
+font-size:100px;
+color:#d64218ed;
+} 
+.quote2 { 
+content: close-quote;
+font-weight: bold;
+font-size:100px;
+color:#d64218ed;
+
+}
+.review1{
+  display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.reviewImg{
+  border-radius: 50%;
+  margin: 20px;
+}
+.reviewStar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.carousel-indicators {
+    .active{
+    color:#d64218ed;
+    }
+  
+}
+.clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  background-color: black;
+  opacity: 0.8;
+}
+.clientImages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 60px;
+  background-color: black;
+  width: 70%;
+
+  div{
+    height: 20%;
+    padding: 20px;
+
+    img{
+      object-fit: cover;
+      height: 30px;
+    }
+  }
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  background-color: black;
+  opacity: 0.8;
+
+  button{
+    background: #d64218;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 200px;
+    margin: 20px;
+  }
+}
+
+.contact1{
+  background-image: linear-gradient(to right, #532418, #ab3f23);
+  opacity: 0.8;
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 20px;
+  .myInput{
+    background: #995a4b;
+    border: 1px solid #632617;
+    border-radius: 14px;
+    padding: 13px;
+
+    button{
+      background: #efddd8;
+      border-radius: 20px;
+      color: #d64218;
+      font-size: 16px;
+      font-weight: 600;
+    }
+   
+    .control1{
+      outline: none;
+      border: none;
+      background: #995a4b;
+      width: 150px;
+  
+      ::placeholder {
+        color: white;
+        opacity: 1; 
+       }
+      
+    }
+
+  }
+  .links{
+    a{
+      font-size: 14px;
+      margin: 5px;
+    }
+  }
+  .heading{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    
+  }
+ .address{
+  p{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+ }
+ .social{
+  img{
+    height: 20px;
+    margin: 0 10px;
+  }
+ }
+}
+.scroll-container {
+  position: absolute;
+  top: 0;
+  right:0;
+  height: 100%;
+  background-color: red;
+}
+
+
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+
+
+.scroll-container a {
+  position: sticky;
+  top: 88vh;
+  cursor: pointer;
+  font-size: 20px;
 }
