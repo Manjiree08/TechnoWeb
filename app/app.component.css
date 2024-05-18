@@ -210,3 +210,32 @@
   background-color: black;
   opacity: 0.8;
 }
+.card{
+  margin: 25px;
+  width: 30vw;
+  background-color: black;
+  .name{
+    padding: 0 10px;
+    border-right: 1px solid white;
+  }
+  .date{
+    padding: 0 10px;
+  }
+  h4 ,p{
+    text-transform: capitalize;
+  }
+}
+.prev-icon{
+    height: 60px;
+    background: #d64218ed;
+    border-radius: 40px;
+    color: black;
+    padding: 20px;
+}
+.next-icon{
+  height: 60px;
+  background: #d64218ed;
+  border-radius: 40px;
+  color: black;
+  padding: 22px;
+}
