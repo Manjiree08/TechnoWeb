@@ -1,6 +1,7 @@
 .background {
     position: relative;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     height: 100vh;
     background-color: black;
     color: white;
